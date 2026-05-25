@@ -1,0 +1,448 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.logo {
+    height: 60px;
+    width: auto;
+    margin-right: 3px;
+}
+
+/* top bar with phones and social links */
+.top-bar {
+    background: #F58634;
+    font-size: 0.875rem;
+    color: white;
+}
+
+.phone-icon {
+	filter: brightness(0) invert(1);
+}
+
+
+/* HERO */
+.hero {
+    background-image: url(Imagens_Layout/Background_style.png);
+    color: white;
+    position: relative;
+    z-index: 1;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* vertical center */
+    align-items: center;    /* horizontal center */
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* TITULOS */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}
+
+/* CARDS */
+#servicos .card {
+  width: 100%;
+  max-width: 480px; /* ocupa até 320px */
+  min-height: 280px;
+  
+}
+
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* centraliza verticalmente */
+    gap: 10px;
+    min-height: 220px; /* ajuste se quiser outra altura */
+    text-align: center;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h3 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+/* BOTÕES */
+.cta-button {
+    background: #F58634;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    font-size: 1rem;
+    max-width: 300px;
+    /* center when inside container with text-align or flex */
+    margin: 0 auto;
+}
+
+.cta-button:hover {
+    background: #e5e5e5;
+}
+
+.cta-button-white {
+    background: white;
+    color: #F58634;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    box-shadow: #111827 0px 5px 15px;
+}
+
+
+/* PORTFÓLIO */
+.portfolio-img {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    width: 100%;
+}
+
+.portfolio-img:hover {
+    transform: scale(1.05);
+}
+
+/* AVALIAÇÕES */
+#google-reviews{
+padding:80px 20px;
+background:#f7f7f7;
+text-align:center;
+overflow:hidden;
+}
+
+.reviews-title{
+font-size:2.4rem;
+margin-bottom:20px;
+}
+
+.reviews-summary{
+margin-bottom:40px;
+}
+
+.rating-number{
+font-size:3rem;
+font-weight:bold;
+}
+
+.rating-stars{
+color:#fbbc04;
+font-size:1.5rem;
+}
+
+.rating-total{
+font-size:0.9rem;
+color:#555;
+}
+
+.reviews-slider{
+max-width:1100px;
+margin:auto;
+overflow:hidden;
+position:relative;
+}
+
+.reviews-track{
+display:flex;
+gap:20px;
+transition:transform .5s ease;
+}
+
+.review-card{
+min-width:300px;
+background:white;
+border-radius:12px;
+padding:20px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+text-align:left;
+}
+
+.review-header{
+display:flex;
+align-items:center;
+gap:10px;
+margin-bottom:10px;
+}
+
+.review-photo{
+width:40px;
+height:40px;
+border-radius:50%;
+}
+
+.review-author{
+font-weight:bold;
+}
+
+.review-stars{
+color:#fbbc04;
+margin-bottom:10px;
+}
+
+.review-text{
+font-size:0.9rem;
+line-height:1.4;
+}
+
+.google-button{
+display:inline-block;
+margin-top:30px;
+padding:12px 25px;
+background:#F58634;
+color:white;
+border-radius:8px;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* CONTATO */
+
+/* WHATSAPP */
+.whatsapp {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #22c55e;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 22px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.whatsapp:hover {
+    transform: scale(1.1);
+}
+/* FORMULÁRIO */
+.contact {
+    background: #F58634;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.formulario {
+    color: black;
+    text-align: left;
+    width: auto;
+    height: auto;
+    box-shadow: #111827 0px 5px 15px;
+    
+}
+
+.qrcode {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .qrcode {
+        max-width: 200px;
+    }
+}
+
+
+/* FOOTER */
+.footer {
+    background: #111827;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-top:1px solid #e5e5e5;
+}
+
+.linha-vertical {
+    position: relative;
+}
+
+.linha-vertical::after {
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: -22px;
+    width: 1px;
+    height: 50%;
+    background-color: #F58634;
+}
+
+@media (max-width: 768px) {
+    .linha-vertical::after {
+        display: none;
+    }
+}
+
+.gl-color {
+    color: #F58634;
+    font-weight: bold;
+}
+
+/* .store{
+padding:0px 0px;
+}
+
+.store:not(:last-child){
+border-right:1px solid #F58634;
+
+}
+
+
+@media (max-width:768px){
+
+.store{
+border-right:none;
+border-bottom:1px solid #F58634;
+padding-bottom:20px;
+margin-bottom:20px;
+}
+
+.store:last-child{
+border-bottom:none;
+}
+
+} */
+
+.logofooter {
+    height: auto;
+    width: 200px;
+    display: block;      /* transforma em bloco para a margem funcionar */
+    margin: 0 auto 20px; /* centraliza horizontalmente e adiciona margem inferior */
+}
+
+.whatsapp-footer{
+display:inline-block;
+transition:transform 0.3s ease;
+}
+
+.whatsapp-footer:hover{
+transform:scale(1.1);
+}
+
+.whats-icon{
+height:42px;
+}
+
+
+
+/* ANIMAÇÃO */
+.bounce {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* ========================= */
+/* REVEAL SEGURO */
+/* ========================= */
+
+.reveal{
+opacity:1;
+transform:translateY(0);
+transition:opacity 0.8s ease, transform 0.8s ease;
+}
+
+/* ativa animação só se JS rodar */
+.js .reveal{
+opacity:0;
+transform:translateY(50px);
+}
+
+.js .reveal.show{
+opacity:1;
+transform:translateY(0);
+}
+
+
+/* HEADER SCROLL EFFECT */
+
+.header-scroll {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    transition: 0.3s;
+}
+
+
+/* HOVER PREMIUM CARDS - Removido (duplicado com .card:hover da linha 50) */
+
+/* CARROSSEL CLIENTES */
+.clientes-carousel {
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.carousel-inner {
+    display: flex;
+    animation: slide 40s linear infinite;
+    will-change: transform;
+}
+
+.carousel-item {
+    flex-shrink: 1;
+    width: 200px;
+    height: 150px;
+    object-fit: contain;
+    margin: 0 20px;
+    padding: 20px;
+    filter: grayscale(100%);
+    opacity: 5;
+    transition: all 0.3s ease;
+}
+
+.carousel-item:hover {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(10%);
+    }
+    100% {
+        transform: translateX(-245%);
+    }
+}
+
+
+
+
